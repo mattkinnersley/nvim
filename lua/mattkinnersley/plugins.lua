@@ -21,5 +21,9 @@ return {
 	{'L3MON4D3/LuaSnip'},
 	{ 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 	{ 'numToStr/Comment.nvim', opts = {} },
+	{
+		'nvim-lualine/lualine.nvim',
+		dependencies = { 'nvim-tree/nvim-web-devicons' }
+	}
 
 }
