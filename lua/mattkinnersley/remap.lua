@@ -5,6 +5,10 @@ vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 vim.keymap.set("n", "+", [[<cmd>vertical resize +20<cr>]])
 vim.keymap.set("n", "_", [[<cmd>vertical resize -20<cr>]])
 
+-- New Terminal window
+vim.keymap.set("n", "<C-w>t", [[<cmd>vsplit term://zsh<cr>]])
+
+
 -- Exit terminal mode with Esc
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
@@ -12,9 +16,8 @@ vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
 
-vim.keymap.set("n", "<leader>y", "\"+y")
-vim.keymap.set("v", "<leader>y", "\"+y")
-vim.keymap.set("n", "<leader>Y", "\"+Y")
+vim.keymap.set("n", "y", "\"+y")
+vim.keymap.set("v", "y", "\"+y")
 
 vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
 
